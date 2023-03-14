@@ -1,0 +1,2 @@
+version=4
+https://github.com//amanusk/s-tui/tags .*/v?(\d\S*)\.tar\.gz
