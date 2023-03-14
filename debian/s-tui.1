@@ -1,0 +1,95 @@
+.TH S-TUI "1" "August 2018" "s-tui 0.7.6 - (C) 2017-2018 Alex Manuskin, Gil Tsuker" "User Commands"
+.SH NAME
+s-tui \- curses-based cpu monitoring
+.SH DESCRIPTION
+usage: s\-tui [\-h] [\-d] [\-\-debug\-file DEBUG_FILE] [\-c] [\-\-csv\-file CSV_FILE]
+[\-t] [\-j] [\-nm] [\-v] [\-ct CUSTOM_TEMP] [\-tt T_THRESH]
+[\-cf CUSTOM_FAN]
+.PP
+TUI interface:
+.PP
+The side bar houses the controls for the displayed graphs.
+At the bottom of the side bar, more information is presented in text form.
+.PP
+* Use the arrow keys or 'hjkl' to navigate the side bar
+.PP
+* Toggle between stressed and regular operation using the radio buttons in 'Modes'.
+.PP
+* If you wish to alternate stress defaults, you can do it in 'Stress options'
+.PP
+* Select a different temperature sensors from the 'Temp Sensors' menu
+.PP
+* Change time between updates using the 'Refresh' field
+.PP
+* Use the <Reset> button to reset graphs and statistics
+.PP
+* Toggle displayed graphs by selecting the [X] check box
+.PP
+* If a sensor is not available on your system, N/A is presented
+.PP
+* If your system supports it, you can use the utf8 button to get a smoother         graph
+.PP
+* Press 'q' or the <quit> button to quit
+.PP
+* Run `s\-tui \fB\-\-help\fR` to get this message and additional cli options
+.SS "optional arguments:"
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show this help message and exit
+.TP
+\fB\-d\fR, \fB\-\-debug\fR
+Output debug log to _s\-tui.log
+.TP
+\fB\-\-debug\-file\fR DEBUG_FILE
+Use a custom debug file. Default: _s\-tui.log
+.TP
+\fB\-c\fR, \fB\-\-csv\fR
+Save stats to csv file
+.TP
+\fB\-\-csv\-file\fR CSV_FILE
+Use a custom CSV file. Default: s\-tui_log_<TIME>.csv
+.TP
+\fB\-t\fR, \fB\-\-terminal\fR
+Display a single line of stats without tui
+.TP
+\fB\-j\fR, \fB\-\-json\fR
+Display a single line of stats in JSON format
+.TP
+\fB\-nm\fR, \fB\-\-no\-mouse\fR
+Disable Mouse for TTY systems
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Display version
+.TP
+\fB\-ct\fR CUSTOM_TEMP, \fB\-\-custom_temp\fR CUSTOM_TEMP
+Custom temperature sensors.
+The format is: <sensors>,<number>
+As it appears in 'sensors'
+e.g
+> sensors
+it8792\-isa\-0a60,
+temp1: +47.0C
+temp2: +35.0C
+temp3: +37.0C
+.IP
+use: \fB\-ct\fR it8792,0 for temp 1
+.TP
+\fB\-tt\fR T_THRESH, \fB\-\-t_thresh\fR T_THRESH
+High Temperature threshold. Default: 80
+.TP
+\fB\-cf\fR CUSTOM_FAN, \fB\-\-custom_fan\fR CUSTOM_FAN
+Similar to custom temp
+e.g
+>sensors
+thinkpad\-isa\-0000
+Adapter: ISA adapter
+fan1:        1975 RPM
+.IP
+use: \fB\-cf\fR thinkpad,0 for fan1
+
+.SH REPORTING BUGS
+s-tui bug tracker: https://github.com/amanusk/s-tui/issues
+
+.SH AUTHORS
+This manual page was written by Jonathan Carter <jcc@debian.org>
+S-tui was written by Alex Manuskin and contributors.

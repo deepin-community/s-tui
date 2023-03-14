@@ -1,14 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: s-tui
+Source: https://github.com/amanusk/s-tui
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
+Copyright: 2017-2021 Alex Manuskin (https://github.com/amanusk)
+           2017-2018 Maor Veitsman
+           2017-2018 Gil Tsuker
+License: GPL-2
+
+Files: debian/*
+Copyright: 2018-2021 Jonathan Carter <jcc@debian.org>
+License: GPL-2
+
+License: GPL-2
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+ the Free Software Foundation.
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of

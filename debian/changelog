@@ -1,5 +1,96 @@
-template-repository (1.0-1) unstable; urgency=medium
+s-tui (1.1.4-1) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository-Browse.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Jonathan Carter ]
+  * New upstream release 
+
+ -- Jonathan Carter <jcc@debian.org>  Fri, 04 Nov 2022 10:05:49 +0200
+
+s-tui (1.1.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix case for Rules-Requires-Root in control file
+  * Update standards version to 4.6.1
+  * Update copyright years
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 02 Sep 2021 19:38:05 +0200
+
+s-tui (1.1.1-1) experimental; urgency=medium
+
+  * New upstream release
+  * Update standards version to 4.5.1
+  * Declare Rules-Requires-Root: no
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 12 Apr 2021 14:23:22 +0200
+
+s-tui (1.0.2-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Jonathan Carter ]
+  * Add stress-ng|stress as suggestions (Closes: #961534)
+
+ -- Jonathan Carter <jcc@debian.org>  Sun, 08 Nov 2020 13:06:36 +0200
+
+s-tui (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 15 Jul 2020 12:59:50 +0200
+
+s-tui (1.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update debhelper-compat level to 13
+
+ -- Jonathan Carter <jcc@debian.org>  Sun, 21 Jun 2020 14:48:42 +0200
+
+s-tui (1.0.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Jonathan Carter ]
+  * New upstream release
+  * Update standards version to 4.5.0
+  * Update debhelper-compat level to 12
+  * Update copyright years
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 29 Jan 2020 13:26:15 +0200
+
+s-tui (0.8.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 04 Dec 2018 10:04:37 +0200
+
+s-tui (0.8.2-2) unstable; urgency=medium
+
+  * Add dependency: python3-pkg-resources (Closes: #912782)
+  * Run wrap-and-sort
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 20 Nov 2018 13:36:36 +0200
+
+s-tui (0.8.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add debian/watch file
+  * Update standards version to 4.2.1
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 30 Aug 2018 16:26:12 +0200
+
+s-tui (0.7.5-2) unstable; urgency=medium
+
+  * Add python3-distutils as dependency (Closes: #905955)
+
+ -- Jonathan Carter <jcc@debian.org>  Sun, 12 Aug 2018 21:30:49 +0200
+
+s-tui (0.7.5-1) unstable; urgency=medium
+
+  * Initial release (Closes: #905406)
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 06 Aug 2018 08:02:22 +0200
